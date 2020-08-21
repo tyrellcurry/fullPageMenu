@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    background-color: black;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: teal;
+}
+
+.menu-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 999;
+}
+
+.menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .75s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: #FFF;
+}
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: #FFF;
+}
+
+
+#box1 {
+    left: 0%;
+}
+
+#box2 {
+    left: 25%;
+}
+
+#box3 {
+    left: 50%;
+}
+
+#box4 {
+    left: 75%;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 45px;
+    color:white;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.nav li:hover {
+    color: darkgray;
+    cursor: pointer; 
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50px;
+    width: 800px;
+    transition: opacity .75s ease-in-out;
+}
+
+.fade {
+    opacity: 0;
+}
