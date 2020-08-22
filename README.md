@@ -13,7 +13,7 @@
 - ### Adding classes styled in CSS into HTML elements using JavaScript query selectors and click listeners.
 
 
-## [Check Out The Project!](https://tyrellcurry.github.io/fullpagemenu/)
+## [Check Out The Project!](https://tyrellcurry.github.io/fullPageMenu/)
 
 <br />
 
