@@ -11,6 +11,7 @@
 ## Specifics:
 - ### Animations (forward, staggered, & reversed) using GSAP's technology.
 - ### Adding classes styled in CSS into HTML elements using JavaScript query selectors and click listeners.
+- ### CSS Animation.
 
 
 ## [Check Out The Project!](https://tyrellcurry.github.io/fullPageMenu/)
