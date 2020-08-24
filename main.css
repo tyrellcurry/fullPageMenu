@@ -106,17 +106,20 @@
     margin: 0;
 }
 
-.nav li {
+.nav li a {
     list-style: none;
     font-size: 45px;
     color:white;
     font-weight: 500;
     margin-top: 15px;
+    text-decoration: none;
+    list-style: none;
 }
 
-.nav li:hover {
+.nav li a:hover {
     color: darkgray;
     cursor: pointer; 
+    list-style: none;
 }
 
 .title {
